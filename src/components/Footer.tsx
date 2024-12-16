@@ -1,19 +1,21 @@
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Linkedin, Mail } from 'lucide-react';
 import { Button } from './ui/button';
 
 const navigation = {
   main: [
-    { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Services', href: '#services' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Contact', href: '#contact' },
+    { name: "About", href: "#about" },
+    { name: "Projects", href: "#projects" },
+    { name: "Services", href: "#services" },
+    { name: "Testimonials", href: "#testimonials" },
+    { name: "Contact", href: "#contact" },
   ],
   social: [
-    { name: 'GitHub', icon: Github, href: '#' },
-    { name: 'Twitter', icon: Twitter, href: '#' },
-    { name: 'LinkedIn', icon: Linkedin, href: '#' },
-    { name: 'Email', icon: Mail, href: 'mailto:hello@example.com' },
+    {
+      name: "LinkedIn",
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/syedzainali777/",
+    },
+    { name: "Email", icon: Mail, href: "mailto:ali4205359@gmail.com" },
   ],
 };
 

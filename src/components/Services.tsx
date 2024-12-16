@@ -1,10 +1,7 @@
 import {
-  Blocks,
   Code,
   Database,
   Globe2,
-  LayoutDashboard,
-  Smartphone
 } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 
@@ -15,30 +12,15 @@ const services = [
     description: 'Custom web applications built with modern frameworks and best practices.'
   },
   {
-    icon: <LayoutDashboard className="w-10 h-10" />,
-    title: 'UI/UX Design',
-    description: 'Intuitive and beautiful interfaces that provide excellent user experience.'
-  },
-  {
     icon: <Database className="w-10 h-10" />,
     title: 'Backend Development',
     description: 'Robust and scalable server-side solutions for your applications.'
-  },
-  {
-    icon: <Smartphone className="w-10 h-10" />,
-    title: 'Mobile Development',
-    description: 'Cross-platform mobile applications that work seamlessly.'
   },
   {
     icon: <Globe2 className="w-10 h-10" />,
     title: 'API Development',
     description: 'RESTful and GraphQL APIs designed for performance and scalability.'
   },
-  {
-    icon: <Blocks className="w-10 h-10" />,
-    title: 'Cloud Solutions',
-    description: 'Cloud infrastructure setup and management for optimal performance.'
-  }
 ];
 
 export function Services() {

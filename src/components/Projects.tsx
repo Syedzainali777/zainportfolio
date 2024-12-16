@@ -1,32 +1,39 @@
-import { ExternalLink, Github } from 'lucide-react';
-import { Button } from './ui/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/card';
+import { ExternalLink } from "lucide-react";
+import { Button } from "./ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce solution with real-time inventory management.',
-    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1600',
-    tags: ['React', 'Node.js', 'MongoDB'],
-    demoUrl: '#',
-    githubUrl: '#'
+    title: "URL SHORTNER",
+    description: "A full-stack URL shortner.",
+    image: "/src/assets/url.png",
+    tags: ["React", "Node.js", "Supabase"],
+    demoUrl: "https://urlshrotner.netlify.app/",
+    githubUrl: "https://github.com/Syedzainali777/Urlshortner",
   },
   {
-    title: 'Task Management App',
-    description: 'A collaborative task management tool with real-time updates.',
-    image: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80&w=1600',
-    tags: ['React', 'Firebase', 'Tailwind'],
-    demoUrl: '#',
-    githubUrl: '#'
+    title: "MEMES Generator app",
+    description: "A real app you can create custom memes and even download it.",
+    image: "/src/assets/memes.png",
+    tags: ["React", "Tailwind"],
+    demoUrl: "https://mymemesgenerator.netlify.app/",
+    githubUrl: "https://github.com/Syedzainali777/Memesgenerator",
   },
   {
-    title: 'Social Media Dashboard',
-    description: 'Analytics dashboard for social media management and monitoring.',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1600',
-    tags: ['React', 'D3.js', 'Express'],
-    demoUrl: '#',
-    githubUrl: '#'
-  }
+    title: "Drapper university california",
+    description:
+      "A real website for the Drapper university California currently active and working",
+    image: "/src/assets/drapper.png",
+    tags: ["Svelte", "Node.js", "Express"],
+    demoUrl: "https://draperuniversity.com/",
+  },
 ];
 
 export function Projects() {
@@ -36,7 +43,8 @@ export function Projects() {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
           <p className="text-muted-foreground">
-            Here are some of my recent projects that showcase my skills and expertise.
+            Here are some of my recent projects that showcase my skills and
+            expertise.
           </p>
         </div>
 
@@ -67,14 +75,16 @@ export function Projects() {
                 </div>
               </CardContent>
               <CardFooter className="gap-4">
-                <Button variant="outline" size="sm" className="w-full">
-                  <Github className="w-4 h-4 mr-2" />
-                  Code
-                </Button>
-                <Button size="sm" className="w-full">
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Demo
-                </Button>
+                <a href={project.githubUrl}>
+                  <Button variant="outline" size="sm" className="w-full">
+                    Code
+                  </Button>
+                </a>
+                <a href={project.demoUrl}>
+                  <Button size="sm" className="w-full">
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                  </Button>
+                </a>
               </CardFooter>
             </Card>
           ))}
