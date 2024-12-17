@@ -1,5 +1,7 @@
-import { ArrowRight, Linkedin } from 'lucide-react';
-import { Button } from './ui/button';
+import { ArrowRight, Linkedin } from "lucide-react";
+import { Button } from "./ui/button";
+import zain from "/zain.jpg";
+import { Link } from "react-scroll";
 
 export function Hero() {
   return (
@@ -20,13 +22,22 @@ export function Hero() {
               help businesses grow and succeed in the digital world.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
-              <Button size="lg" className="w-full sm:w-auto">
-                View My Work
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              <Link
+                to="projects" // This will scroll to the Projects section
+                smooth={true}
+                duration={500}
+              >
+                <Button size="lg" className="w-full sm:w-auto">
+                  View My Work
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
               <div className="flex items-center gap-4">
                 <Button variant="ghost" size="icon" className="rounded-full">
-                  <a href="https://www.linkedin.com/in/syedzainali777" target='blank'>
+                  <a
+                    href="https://www.linkedin.com/in/syedzainali777"
+                    target="blank"
+                  >
                     <Linkedin className="h-5 w-5" />
                   </a>
                 </Button>
@@ -36,7 +47,7 @@ export function Hero() {
           <div className="flex-1 relative">
             <div className="w-64 h-64 md:w-96 md:h-96 rounded-full bg-gradient-to-r from-primary to-blue-600 blur-3xl opacity-20 absolute -z-10" />
             <img
-              src="/src/assets/zain.jpg"
+              src={zain}
               alt="Profile"
               className="w-64 h-64 md:w-96 md:h-96 rounded-full object-cover border-8 border-background shadow-xl"
             />

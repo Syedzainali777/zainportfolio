@@ -1,5 +1,5 @@
 import { ExternalLink } from "lucide-react";
-import { Button } from "./ui/button";
+import { Button } from "../components/ui/button";
 import {
   Card,
   CardContent,
@@ -7,13 +7,13 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "./ui/card";
+} from "../components/ui/card";
 
 const projects = [
   {
     title: "URL SHORTNER",
     description: "A full-stack URL shortner.",
-    image: "/src/assets/url.png",
+    image: "/url.png",
     tags: ["React", "Node.js", "Supabase"],
     demoUrl: "https://urlshrotner.netlify.app/",
     githubUrl: "https://github.com/Syedzainali777/Urlshortner",
@@ -21,7 +21,7 @@ const projects = [
   {
     title: "MEMES Generator app",
     description: "A real app you can create custom memes and even download it.",
-    image: "/src/assets/memes.png",
+    image: "/memes.png",
     tags: ["React", "Tailwind"],
     demoUrl: "https://mymemesgenerator.netlify.app/",
     githubUrl: "https://github.com/Syedzainali777/Memesgenerator",
@@ -30,7 +30,7 @@ const projects = [
     title: "Drapper university california",
     description:
       "A real website for the Drapper university California currently active and working",
-    image: "/src/assets/drapper.png",
+    image: "/drapper.png",
     tags: ["Svelte", "Node.js", "Express"],
     demoUrl: "https://draperuniversity.com/",
   },
